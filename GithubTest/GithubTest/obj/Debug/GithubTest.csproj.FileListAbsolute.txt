@@ -1,0 +1,6 @@
+C:\Users\Iida\Hello_World\GithubTest\GithubTest\bin\Debug\GithubTest.exe.config
+C:\Users\Iida\Hello_World\GithubTest\GithubTest\bin\Debug\GithubTest.exe
+C:\Users\Iida\Hello_World\GithubTest\GithubTest\bin\Debug\GithubTest.pdb
+C:\Users\Iida\Hello_World\GithubTest\GithubTest\obj\Debug\GithubTest.csprojResolveAssemblyReference.cache
+C:\Users\Iida\Hello_World\GithubTest\GithubTest\obj\Debug\GithubTest.exe
+C:\Users\Iida\Hello_World\GithubTest\GithubTest\obj\Debug\GithubTest.pdb
