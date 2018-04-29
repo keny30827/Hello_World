@@ -10,8 +10,14 @@ namespace GithubTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("HelloWorld!");
+            Test.TestManager test = new Test.TestManager();
+            test.Add("GithubTest.Program", "testMain");
+            test.Run();
             return;
+        }
+        public void testMain()
+        {
+            Console.WriteLine("test");
         }
     }
 }
