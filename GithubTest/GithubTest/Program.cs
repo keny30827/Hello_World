@@ -13,7 +13,8 @@ namespace GithubTest
         static void Main(string[] args)
         {
             Test.TestManager test = new Test.TestManager();
-            test.Add("GithubTest.Data.Stack", "testAddOneSetUp", "testAddOneExec", "testAddOneTearDown");
+            test.Add("GithubTest.Data.Stack", "testSetUp", "testPushOneExec", "testTearDown");
+            test.Add("GithubTest.Data.Stack", "testSetUp", "testPopOneExec", "testTearDown");
             test.Run();
             test.Clean();
             return;

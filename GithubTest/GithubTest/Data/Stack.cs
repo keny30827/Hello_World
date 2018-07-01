@@ -21,6 +21,11 @@ namespace GithubTest.Data
             buf = value;
         }
 
+        public void Pop()
+        {
+            buf = -1;
+        }
+
         public int Front()
         {
             return buf;
@@ -31,19 +36,28 @@ namespace GithubTest.Data
             return (buf < 0) ? 0 : 1;
         }
 
-        public void testAddOneSetUp()
+        public void testSetUp()
         {
             buf = -1;
         }
-        public void testAddOneExec()
+        public void testTearDown()
+        {
+            buf = -1;
+        }
+
+        public void testPushOneExec()
         {
             Push(2);
             Debug.Assert( Count() == 1 );
             Debug.Assert( Front() == 2 );
         }
-        public void testAddOneTearDown()
+        public void testPopOneExec()
         {
-            buf = -1;
+            Push(2);
+            Pop();
+            Debug.Assert(Count() == 0);
+            Debug.Assert(Front() < 0);
         }
+
     }
 }
